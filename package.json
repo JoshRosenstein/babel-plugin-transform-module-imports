@@ -1,0 +1,47 @@
+{
+  "name": "babel-plugin-transform-module-imports",
+  "version": "1.0.0",
+  "description": "Transforms member style imports (import {x} from 'y') into default style imports (import x from 'y/lib/x' and import 'y/lib/x/style.css')",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepack": "tsc",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "mocha"
+  },
+  "keywords": [
+    "babel",
+    "transform",
+    "plugin",
+    "modules",
+    "esm"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshRosenstein/babel-plugin-transform-module-imports.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JoshRosenstein/babel-plugin-transform-module-imports/issues"
+  },
+  "homepage": "https://github.com/JoshRosenstein/babel-plugin-transform-module-imports#readme",
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.0.0",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.kebabcase": "^4.1.1",
+    "lodash.snakecase": "^4.1.1"
+  },
+  "peerDependencies": {
+    "@babel/core": ">=7"
+  },
+  "devDependencies": {
+    "@types/lodash.camelcase": "^4.3.4",
+    "@types/lodash.kebabcase": "^4.1.4",
+    "@types/lodash.snakecase": "^4.1.4",
+    "@babel/core": "^7.1.2",
+    "@types/node": "^10.12.6",
+    "mocha": "^5.2.0",
+    "ts-node": "7.0.1",
+    "typescript": "^3.1.1"
+  }
+}
